@@ -6,7 +6,8 @@ export default function EngineerPortfolio() {
   const [terminalText, setTerminalText] = useState('');
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const fullTerminalText = "$ whoami\nsaatvik.sumanta\n$ cat skills.txt\n> Quantum Computing • Robotics • Machine Learning\n$ status\n> Building the future, one algorithm at a time...";
+  // const fullTerminalText = "$ whoami\nsaatvik.sumanta\n$ cat skills.txt\n> Quantum Computing • Robotics • Machine Learning\n$ status\n> Building the future, one algorithm at a time...";
+  const fullTerminalText = "$ whoami\nsaatvik.sumanta\n$ cat profile.txt\n> AI & Robotics Engineer | Quantum ML Researcher\n$ cat focus.txt\n> Embedded Systems • Autonomous Robotics • Applied ML\n$ status\n> Engineering systems that operate in the real world.";
 
   useEffect(() => {
     let index = 0;
@@ -29,70 +30,145 @@ export default function EngineerPortfolio() {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
+  // const projects = [
+  //   {
+  //     title: "Lunar Vitalis",
+  //     subtitle: "IAC 2025 Conference Paper",
+  //     description: "Communication relay router concept for lunar missions in permanently shadowed regions",
+  //     icon: <Rocket className="w-6 h-6" />,
+  //     tags: ["Aerospace", "Communications", "Research"],
+  //     link: "https://github.com/yourusername/lunar-vitalis" // Replace with actual link
+  //   },
+  //   {
+  //     title: "MOON Robot",
+  //     subtitle: "Mobile Orb for Omnidirectional Navigation",
+  //     description: "Self-balancing spherical robot with GPS, IMU, and real-time navigation",
+  //     icon: <Radio className="w-6 h-6" />,
+  //     tags: ["Robotics", "Embedded Systems", "Arduino"],
+  //     link: "https://github.com/yourusername/moon-robot" // Replace with actual link
+  //   },
+  //   {
+  //     title: "Swarm MicroRobots",
+  //     subtitle: "Self-Assembling Simulation",
+  //     description: "Python simulation using boid-inspired algorithms for dynamic formations",
+  //     icon: <GitBranch className="w-6 h-6" />,
+  //     tags: ["Python", "Simulation", "Algorithms"],
+  //     link: "https://github.com/yourusername/swarm-microrobots" // Replace with actual link
+  //   },
+  //   {
+  //     title: "Quantum ML",
+  //     subtitle: "KwantumG Research Labs",
+  //     description: "Developing quantum computing algorithms and conducting QML research",
+  //     icon: <Brain className="w-6 h-6" />,
+  //     tags: ["Quantum", "Machine Learning", "Research"],
+  //     link: "https://github.com/yourusername/quantum-ml" // Replace with actual link
+  //   }
+  // ];
+
   const projects = [
-    {
-      title: "Lunar Vitalis",
-      subtitle: "IAC 2025 Conference Paper",
-      description: "Communication relay router concept for lunar missions in permanently shadowed regions",
-      icon: <Rocket className="w-6 h-6" />,
-      tags: ["Aerospace", "Communications", "Research"],
-      link: "https://github.com/yourusername/lunar-vitalis" // Replace with actual link
-    },
-    {
-      title: "MOON Robot",
-      subtitle: "Mobile Orb for Omnidirectional Navigation",
-      description: "Self-balancing spherical robot with GPS, IMU, and real-time navigation",
-      icon: <Radio className="w-6 h-6" />,
-      tags: ["Robotics", "Embedded Systems", "Arduino"],
-      link: "https://github.com/yourusername/moon-robot" // Replace with actual link
-    },
-    {
-      title: "Swarm MicroRobots",
-      subtitle: "Self-Assembling Simulation",
-      description: "Python simulation using boid-inspired algorithms for dynamic formations",
-      icon: <GitBranch className="w-6 h-6" />,
-      tags: ["Python", "Simulation", "Algorithms"],
-      link: "https://github.com/yourusername/swarm-microrobots" // Replace with actual link
-    },
-    {
-      title: "Quantum ML",
-      subtitle: "KwantumG Research Labs",
-      description: "Developing quantum computing algorithms and conducting QML research",
-      icon: <Brain className="w-6 h-6" />,
-      tags: ["Quantum", "Machine Learning", "Research"],
-      link: "https://github.com/yourusername/quantum-ml" // Replace with actual link
-    }
-  ];
+  {
+    title: "Lunar Vitalis",
+    subtitle: "IAC 2025 • Research Paper",
+    description:
+      "Proposed a resilient lunar communication relay architecture for permanently shadowed regions, enabling fault-tolerant data routing and extended mission lifetimes in extreme environments.",
+    icon: <Rocket className="w-6 h-6" />,
+    tags: ["Space Systems", "Networking", "Research"],
+    link: "https://github.com/yourusername/lunar-vitalis"
+  },
+  {
+    title: "MOON Robot",
+    subtitle: "Mobile Orb for Omnidirectional Navigation",
+    description:
+      "Designed a self-balancing spherical robot integrating BLDC actuation, IMU fusion, and control logic for omnidirectional mobility and terrain-adaptive navigation.",
+    icon: <Radio className="w-6 h-6" />,
+    tags: ["Robotics", "Embedded Systems", "Control"],
+    link: "https://github.com/yourusername/moon-robot"
+  },
+  {
+    title: "Swarm MicroRobots",
+    subtitle: "Self-Assembling Swarm Simulation",
+    description:
+      "Developed a Python-based swarm simulation inspired by boid dynamics to study decentralized coordination, adaptive shape formation, and emergent collective behavior.",
+    icon: <GitBranch className="w-6 h-6" />,
+    tags: ["Swarm Robotics", "Algorithms", "Simulation"],
+    link: "https://github.com/yourusername/swarm-microrobots"
+  },
+  {
+    title: "Quantum Machine Learning",
+    subtitle: "KwantumG Research Labs",
+    description:
+      "Worked on quantum algorithms and quantum machine learning workflows, exploring hybrid quantum–classical models and variational circuits for data-driven problems.",
+    icon: <Brain className="w-6 h-6" />,
+    tags: ["Quantum Computing", "QML", "Research"],
+    link: "https://github.com/yourusername/quantum-ml"
+  }
+];
 
-  const experiences = [
-    {
-      role: "Quantum ML Developer Intern",
-      company: "KwantumG Research Labs",
-      period: "Dec 2024 - Apr 2025",
-      description: "Quantum algorithms & QML research"
-    },
-    {
-      role: "Programmer Analyst Trainee",
-      company: "Cognizant Technology Solutions",
-      period: "Apr 2025",
-      description: "Azure Cloud & Data Pipelines"
-    },
-    {
-      role: "Research Intern",
-      company: "Centre for Advanced Data Science, VIT",
-      period: "Mar 2023 - Aug 2023",
-      description: "Neural Networks for PDEs"
-    }
-  ];
 
-  const skills = [
-    { name: "Python", icon: <Code2 className="w-5 h-5" /> },
-    { name: "C/C++", icon: <Terminal className="w-5 h-5" /> },
-    { name: "TensorFlow", icon: <Brain className="w-5 h-5" /> },
-    { name: "ROS", icon: <Cpu className="w-5 h-5" /> },
-    { name: "Azure Cloud", icon: <Database className="w-5 h-5" /> },
-    { name: "Machine Learning", icon: <Zap className="w-5 h-5" /> }
-  ];
+  // const experiences = [
+  //   {
+  //     role: "Quantum ML Developer Intern",
+  //     company: "KwantumG Research Labs",
+  //     period: "Dec 2024 - Apr 2025",
+  //     description: "Quantum algorithms & QML research"
+  //   },
+  //   {
+  //     role: "Programmer Analyst Trainee",
+  //     company: "Cognizant Technology Solutions",
+  //     period: "Apr 2025",
+  //     description: "Azure Cloud & Data Pipelines"
+  //   },
+  //   {
+  //     role: "Research Intern",
+  //     company: "Centre for Advanced Data Science, VIT",
+  //     period: "Mar 2023 - Aug 2023",
+  //     description: "Neural Networks for PDEs"
+  //   }
+  // ];
+
+const experiences = [
+  {
+    role: "Quantum Machine Learning Developer Intern",
+    company: "KwantumG Research Labs",
+    period: "Dec 2024 – Apr 2025",
+    description:
+      "Researched and implemented quantum algorithms and hybrid QML pipelines, focusing on variational circuits, data encoding strategies, and experimental benchmarking."
+  },
+  {
+    role: "Programmer Analyst Trainee",
+    company: "Cognizant Technology Solutions",
+    period: "Apr 2025",
+    description:
+      "Worked with Azure cloud services and data pipelines, gaining hands-on exposure to enterprise-scale systems, deployment workflows, and cloud-based analytics."
+  },
+  {
+    role: "Research Intern",
+    company: "Centre for Advanced Data Science, VIT",
+    period: "Mar 2023 – Aug 2023",
+    description:
+      "Conducted research on neural networks for solving partial differential equations (PDEs), focusing on model stability, convergence, and numerical accuracy."
+  }
+];
+
+  // const skills = [
+  //   { name: "Python", icon: <Code2 className="w-5 h-5" /> },
+  //   { name: "C/C++", icon: <Terminal className="w-5 h-5" /> },
+  //   { name: "TensorFlow", icon: <Brain className="w-5 h-5" /> },
+  //   { name: "ROS", icon: <Cpu className="w-5 h-5" /> },
+  //   { name: "Azure Cloud", icon: <Database className="w-5 h-5" /> },
+  //   { name: "Machine Learning", icon: <Zap className="w-5 h-5" /> }
+  // ];
+
+const skills = [
+  { name: "Python", icon: <Code2 className="w-5 h-5" /> },
+  { name: "C / C++", icon: <Terminal className="w-5 h-5" /> },
+  { name: "Machine Learning", icon: <Brain className="w-5 h-5" /> },
+  { name: "Robotics & ROS", icon: <Cpu className="w-5 h-5" /> },
+  { name: "Embedded Systems", icon: <Radio className="w-5 h-5" /> },
+  { name: "Cloud & Data", icon: <Database className="w-5 h-5" /> }
+];
+
+
 
   return (
     <div className="min-h-screen bg-black text-green-400 font-mono relative overflow-hidden">
@@ -167,10 +243,16 @@ export default function EngineerPortfolio() {
               </a>
             </div>
           </div>
-          <p className="text-xl text-green-200 max-w-3xl border-l-4 border-green-500 pl-4">
+          {/* <p className="text-xl text-green-200 max-w-3xl border-l-4 border-green-500 pl-4">
             Engineering graduate specializing in quantum computing, robotics, and machine learning. 
             Building scalable systems that push the boundaries of what's possible.
+          </p> */}
+          <p className="text-xl text-green-200 max-w-3xl border-l-4 border-green-500 pl-4">
+            B.Tech Computer Science and Engineering student specializing in AI & Robotics. 
+            I design and build intelligent systems across embedded hardware, autonomous robotics, 
+            machine learning, and quantum computing—bridging theory with deployable engineering.
           </p>
+
         </div>
 
         {/* Navigation */}
@@ -306,8 +388,8 @@ export default function EngineerPortfolio() {
                 <h3 className="text-2xl font-bold text-white">Student Rocket Team Co-founder</h3>
               </div>
               <p className="text-green-200 mb-4">
-                Co-founded the first Student Rocket Team of VIT Chennai and developed partnerships 
-                with Solid Rocket Motor providers for international competitions.
+                Co-founded the first Student Rocket Team at VIT Chennai, establishing technical workflows, 
+                industry collaborations, and testing infrastructure for competitive sounding rocket development.
               </p>
               <ul className="space-y-2 text-green-300">
                 <li className="flex items-start gap-2">
