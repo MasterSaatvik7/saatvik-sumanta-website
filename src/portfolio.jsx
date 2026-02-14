@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Rocket, Cpu, Zap, GitBranch, Mail, Linkedin, MapPin, Code2, Brain, Radio, Database, Terminal, Github, Globe, ExternalLink } from 'lucide-react';
+import { Rocket, Cpu, Zap, Github, GitBranch, Mail, Linkedin, MapPin, Code2, Brain, BrainCircuit , Radio, Database, Terminal, Globe, ExternalLink, Download, Shield } from 'lucide-react';
 
 export default function EngineerPortfolio() {
   const [activeSection, setActiveSection] = useState('intro');
@@ -7,7 +7,7 @@ export default function EngineerPortfolio() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   // const fullTerminalText = "$ whoami\nsaatvik.sumanta\n$ cat skills.txt\n> Quantum Computing • Robotics • Machine Learning\n$ status\n> Building the future, one algorithm at a time...";
-  const fullTerminalText = "$ whoami\nsaatvik.sumanta\n$ cat profile.txt\n> AI & Robotics Engineer | Quantum ML Researcher\n$ cat focus.txt\n> Embedded Systems • Autonomous Robotics • Applied ML\n$ status\n> Engineering systems that operate in the real world.";
+  const fullTerminalText = "$ whoami\nsaatvik.sumanta\n$ cat profile.txt\n> AI & Robotics Engineer | Quantum ML Researcher\n$ cat focus.txt\n> Embedded Systems • Autonomous Robotics • Applied ML\n$ Philosophy\n> A Learner learning to create.";
 
   useEffect(() => {
     let index = 0;
@@ -73,36 +73,73 @@ export default function EngineerPortfolio() {
       "Proposed a resilient lunar communication relay architecture for permanently shadowed regions, enabling fault-tolerant data routing and extended mission lifetimes in extreme environments.",
     icon: <Rocket className="w-6 h-6" />,
     tags: ["Space Systems", "Networking", "Research"],
-    link: "https://github.com/yourusername/lunar-vitalis"
+    link: "https://scholar.google.com/citations?user=H5Eyn-IAAAAJ&hl=en"
   },
   {
     title: "MOON Robot",
-    subtitle: "Mobile Orb for Omnidirectional Navigation",
+    subtitle: "2025 • Patent in Review (Indian Patents Act, 1970)",
     description:
       "Designed a self-balancing spherical robot integrating BLDC actuation, IMU fusion, and control logic for omnidirectional mobility and terrain-adaptive navigation.",
     icon: <Radio className="w-6 h-6" />,
     tags: ["Robotics", "Embedded Systems", "Control"],
-    link: "https://github.com/yourusername/moon-robot"
+    link: "https://www.linkedin.com/posts/saatvik-sumanta_engineeringjourney-finalyearproject-innovation-activity-7327914282988306434-cBeD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2V2H0BJcr9QlaREhbKC9GSTzOuUqo66TQ"
   },
   {
     title: "Swarm MicroRobots",
-    subtitle: "Self-Assembling Swarm Simulation",
+    subtitle: "2024 • Self-Assembling Swarm Simulation",
     description:
       "Developed a Python-based swarm simulation inspired by boid dynamics to study decentralized coordination, adaptive shape formation, and emergent collective behavior.",
     icon: <GitBranch className="w-6 h-6" />,
     tags: ["Swarm Robotics", "Algorithms", "Simulation"],
-    link: "https://github.com/yourusername/swarm-microrobots"
+    link: "https://github.com/MasterSaatvik7/Self-Assembling-Swarm-MicroRobot"
   },
   {
-    title: "Quantum Machine Learning",
-    subtitle: "KwantumG Research Labs",
+    title: "Quantum Data Encoding and PCA",
+    subtitle: "2024 • Quantum Machine Learning",
     description:
-      "Worked on quantum algorithms and quantum machine learning workflows, exploring hybrid quantum–classical models and variational circuits for data-driven problems.",
+      "Built an interactive Quantum Machine Learning web app using Flask and Qiskit implementing amplitude and angle encoding with Quantum PCA. The platform processes CSV datasets with feature selection and quantum-based dimensionality reduction. Demonstrates practical hybrid quantum-classical workflows for real-world data analysis.",
+    icon: <BrainCircuit   className="w-6 h-6" />,
+    tags: ["Quantum Computing", "Algorithms"],
+    link: "https://github.com/MasterSaatvik7/Self-Assembling-Swarm-MicroRobot"
+  },
+  {
+    title: "Encryption Decryption Compression Device",
+    subtitle: "2024 • Data Security",
+    description:
+      "Created a Raspberry Pi-based embedded device for USB file encryption, decryption, and compression.",
+    icon: <Shield className="w-6 h-6" />,
+    tags: ["Data Encryption", "Embedded Systems"],
+    link: "https://www.youtube.com/watch?v=1HCr1wcFImQ"
+  },
+  {
+    title: "Tea Leaf Disease Detection",
+    subtitle: "2023 • Machine Learning • Web Apps",
+    description:
+      "Developed a Tea-Leaf-Disease-Detection model using Convolutional Neural Networks (CNN) to identify various diseases in tea leaves also created a web application for model hosting.",
     icon: <Brain className="w-6 h-6" />,
-    tags: ["Quantum Computing", "QML", "Research"],
-    link: "https://github.com/yourusername/quantum-ml"
+    tags: ["Machine Learning", "Web Apps", "Flask Backend"],
+    link: "https://github.com/MasterSaatvik7/Tea-Leaf-Disease-Detection"
+  },
+  {
+    title: "Static Rocket Motor Test Pad",
+    subtitle: "2022 • Test Stand Design",
+    description:
+      "Developed the SPIDER STATIC TEST PAD, a quadruped platform designed for standardized testing of high-powered rocket motors during my internship at STAR – Space Technology and Aeronautical Rocketry. This system measures thrust up to 3000 N and captures thrust-time and temperature-time data, enabling precise performance analysis.",
+    icon: <Rocket className="w-6 h-6" />,
+    tags: ["Space Systems", "Embedded Systems", "System Design"],
+    link: "https://github.com/MasterSaatvik7/Static-Rocket-Test-Pad"
   }
 ];
+  // {
+  //   title: "Robotic Arm",
+  //   subtitle: "2023 • Robotics",
+  //   description:
+  //     "Designed a 4-DOF Pick and Place Robotic Arm with self designed circuits and 3D printed body.",
+  //   icon: <Robot className="w-6 h-6" />,
+  //   tags: ["Robotics", "Embedded Systems, 3D Printing"],
+  //   link: "https://github.com/MasterSaatvik7/4DOF-Robo-Arm"
+  // }
+// ];
 
 
   // const experiences = [
@@ -128,6 +165,13 @@ export default function EngineerPortfolio() {
 
 const experiences = [
   {
+    role: "Programmer Analyst Trainee",
+    company: "Cognizant Technology Solutions",
+    period: "Aug 2025 - Present",
+    description:
+      "Trained on Azure cloud services and data pipelines, currently working as QA with Snowflake SQL & Tableau."
+  },  
+  {
     role: "Quantum Machine Learning Developer Intern",
     company: "KwantumG Research Labs",
     period: "Dec 2024 – Apr 2025",
@@ -135,18 +179,18 @@ const experiences = [
       "Researched and implemented quantum algorithms and hybrid QML pipelines, focusing on variational circuits, data encoding strategies, and experimental benchmarking."
   },
   {
-    role: "Programmer Analyst Trainee",
-    company: "Cognizant Technology Solutions",
-    period: "Apr 2025",
-    description:
-      "Worked with Azure cloud services and data pipelines, gaining hands-on exposure to enterprise-scale systems, deployment workflows, and cloud-based analytics."
-  },
-  {
     role: "Research Intern",
     company: "Centre for Advanced Data Science, VIT",
     period: "Mar 2023 – Aug 2023",
     description:
-      "Conducted research on neural networks for solving partial differential equations (PDEs), focusing on model stability, convergence, and numerical accuracy."
+      "Assisted research on neural networks for solving partial differential equations (PDEs), focusing on model stability, convergence, and numerical accuracy."
+  },
+  {
+    role: "Remote Software Intern",
+    company: "STAR Lab, Surat",
+    period: "Sept 2022 – Oct 2022",
+    description:
+      "Designed a Data Acquisition system for a static rocket motor test stand, enabling real-time sensor data collection."
   }
 ];
 
@@ -223,7 +267,7 @@ const skills = [
           <div className="flex items-center gap-4 text-green-300 mb-4 flex-wrap">
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              <span>Noida, India</span>
+              <span>India</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
@@ -242,16 +286,40 @@ const skills = [
                 LinkedIn
               </a>
             </div>
+            <div className="flex items-center gap-2">
+              <Github className="w-4 h-4" />
+              <a
+                href="https://github.com/MasterSaatvik7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                Github
+              </a>
+            </div>
           </div>
           {/* <p className="text-xl text-green-200 max-w-3xl border-l-4 border-green-500 pl-4">
             Engineering graduate specializing in quantum computing, robotics, and machine learning. 
             Building scalable systems that push the boundaries of what's possible.
           </p> */}
           <p className="text-xl text-green-200 max-w-3xl border-l-4 border-green-500 pl-4">
-            B.Tech Computer Science and Engineering student specializing in AI & Robotics. 
+            B.Tech Computer Science and Engineering graduate specializing in AI & Robotics. 
             I design and build intelligent systems across embedded hardware, autonomous robotics, 
-            machine learning, and quantum computing—bridging theory with deployable engineering.
+            machine learning, and quantum computing bridging theory with deployable engineering.
           </p>
+
+          {/* Resume Download Button */}
+          <div className="mt-6">
+            <a 
+              href="https://drive.google.com/file/d/12JSqk8OJTRLOPm5tBw75IOQeG_5lnrKs/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-6 py-3 border-2 border-green-500 text-green-400 hover:bg-green-500 hover:text-black transition-all font-bold shadow-[0_0_10px_rgba(0,255,65,0.3)] hover:shadow-[0_0_20px_rgba(0,255,65,0.6)] group"
+            >
+              <Download className="w-5 h-5 group-hover:animate-bounce" />
+              <span>DOWNLOAD RESUME</span>
+            </a>
+          </div>
 
         </div>
 
@@ -360,10 +428,10 @@ const skills = [
               <div className="grid md:grid-cols-2 gap-4 text-sm">
                 <div>
                   <p className="text-green-400 font-bold mb-2">Languages:</p>
-                  <p className="text-green-200">Python, C/C++, Java, MySQL, NoSQL</p>
+                  <p className="text-green-200">Python, C/C++, Java, Snowflake-SQL, NoSQL</p>
                 </div>
                 <div>
-                  <p className="text-green-400 font-bold mb-2">Technologies:</p>
+                  <p className="text-green-400 font-bold mb-2">Technologies & Frameworks:</p>
                   <p className="text-green-200">TensorFlow, YOLO, Pandas, Flask, ROS, Gazebo, Power BI</p>
                 </div>
                 <div>
@@ -389,7 +457,7 @@ const skills = [
               </div>
               <p className="text-green-200 mb-4">
                 Co-founded the first Student Rocket Team at VIT Chennai, establishing technical workflows, 
-                industry collaborations, and testing infrastructure for competitive sounding rocket development.
+                industry collaborations, and testing infrastructure for competitive model rocket development.
               </p>
               <ul className="space-y-2 text-green-300">
                 <li className="flex items-start gap-2">
