@@ -100,7 +100,7 @@ export default function EngineerPortfolio() {
       "Built an interactive Quantum Machine Learning web app using Flask and Qiskit implementing amplitude and angle encoding with Quantum PCA. The platform processes CSV datasets with feature selection and quantum-based dimensionality reduction. Demonstrates practical hybrid quantum-classical workflows for real-world data analysis.",
     icon: <BrainCircuit   className="w-6 h-6" />,
     tags: ["Quantum Computing", "Algorithms"],
-    link: "https://github.com/MasterSaatvik7/Self-Assembling-Swarm-MicroRobot"
+    link: "https://github.com/MasterSaatvik7/Quantum-Data-Encoding-and-Quantum-PCA"
   },
   {
     title: "Encryption Decryption Compression Device",
