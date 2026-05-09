@@ -77,7 +77,7 @@ export default function EngineerPortfolio() {
   },
   {
     title: "MOON Robot",
-    subtitle: "2025 • Patent in Review (Indian Patents Act, 1970)",
+    subtitle: "2025 • Patent in Review (Indian Patents Application - 202541130831)",
     description:
       "Designed a self-balancing spherical robot integrating BLDC actuation, IMU fusion, and control logic for omnidirectional mobility and terrain-adaptive navigation.",
     icon: <Radio className="w-6 h-6" />,
